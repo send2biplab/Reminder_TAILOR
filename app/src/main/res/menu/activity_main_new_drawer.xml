@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_newhome"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/addsmsfiles"
+            android:title="Add SMS File" />
+
+        <item
+            android:id="@+id/nav_special_call"
+            android:icon="@drawable/addsmsfiles"
+            android:title="Add Greeting Message" />
+
+
+        <item
+
+            android:id="@+id/nav_special_message"
+            android:icon="@drawable/addsmsfiles"
+            android:title="Add Text Message" />
+
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/list"
+            android:title="All Customer List" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_add_pdf"
+            android:icon="@drawable/addsmsfiles"
+            android:title="Add Creative" />
+
+        <item
+            android:id="@+id/nav_add_defoult"
+            android:icon="@drawable/addsmsfiles"
+            android:title="Add Documents" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Batch" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/changepassword"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/exportvisitordata"
+            android:title="Export Visitor Data" />
+        <item
+            android:id="@+id/nav_country"
+            android:icon="@drawable/countrycode"
+            android:title="Prefix Contact Name" />
+        <item
+            android:id="@+id/nav_accessable"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_wp_type"
+            android:icon="@drawable/settings"
+            android:title="Whatsapp Type" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/erasedata"
+            android:title="Erase Data" />
+
+        <item
+
+            android:id="@+id/nav_keyword"
+            android:icon="@drawable/settings"
+            android:title="Whatsapp Type" />
+
+    </group>
+
+
+
+</menu>

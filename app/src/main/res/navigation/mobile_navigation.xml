@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_newhome">
+
+
+    <fragment
+        android:id="@+id/nav_newhome"
+        android:name="com.ubk.casdis_tailor.NewHomeFragment"
+        android:label="CASDIS TAILOR"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ubk.casdis_tailor.ui.home.EditHomeFragment"
+        android:label="CASDIS TAILOR"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.ubk.casdis_tailor.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.ubk.casdis_tailor.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.ubk.casdis_tailor.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.ubk.casdis_tailor.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.ubk.casdis_tailor.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_add_defoult"
+        android:name="com.ubk.casdis_tailor.ui.adddefoultmessage.AddMsgFragment"
+        android:label="Add Documents"
+        tools:layout="@layout/fragment_send" />
+
+   <fragment
+        android:id="@+id/nav_list"
+        android:name="com.ubk.casdis_tailor.EditListFragment"
+        android:label="Customer List"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_add_pdf"
+        android:name="com.ubk.casdis_tailor.PdfFragment"
+        android:label="Add Creative"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_accessable"
+        android:name="com.ubk.casdis_tailor.ui.permission.PermissionFragment"
+        android:label="Accessibility"
+        tools:layout="@layout/fragment_send" />
+
+
+    <fragment
+        android:id="@+id/nav_country"
+        android:name="com.ubk.casdis_tailor.ui.country.CountryFragment"
+        android:label="Contact Name"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_keyword"
+        android:name="com.ubk.casdis_tailor.ui.keyword.KeywordFragment"
+        android:label="Add Message Keyword"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_special_message"
+        android:name="com.ubk.casdis_tailor.ui.specialmsg.SpecialmsgFragment"
+        android:label="Add Text Message"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_special_call"
+        android:name="com.ubk.casdis_tailor.ui.specialcall.SpecialcallFragment"
+        android:label="Add Greeting Message."
+        tools:layout="@layout/fragment_send" />
+
+
+    <fragment
+        android:id="@+id/nav_wp_type"
+        android:name="com.ubk.casdis_tailor.WhatsappTypeFragment"
+        android:label="Whatsap Type"
+        tools:layout="@layout/fragment_whatsapp_type" />
+
+
+</navigation>

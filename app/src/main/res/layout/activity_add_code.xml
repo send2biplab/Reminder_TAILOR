@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar1"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat"
+                android:layout_height="55dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:src="@drawable/backkk"-->
+                    <!--                    android:id="@+id/backkk"-->
+                    <!--                    android:layout_margin="10dp"-->
+                    <!--                    android:layout_weight="0.6">-->
+
+                    <!--                </ImageView>-->
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Add Message"
+                            android:id="@+id/dashboardPage_logout"
+                            android:textColor="#fff"
+                            android:textSize="18dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="left|center"
+                        android:text=""
+                        android:id="@+id/logoutBranch"
+                        android:textColor="#fff"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Keyword">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/AddPromoCode_promocode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="70"
+                android:hint="Keyword"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Select Type">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <Spinner
+                android:id="@+id/spinnertype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="8dp"
+                android:maxLength="70"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16dp"
+
+            android:id="@+id/imgpath"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/backgroundtextviewcolour"
+            android:id="@+id/gallery"
+            android:text="Document"
+            android:layout_width="200dp"
+            android:layout_height="50dp"></TextView>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/backgroundtextviewcolour"
+            android:id="@+id/pdfupload"
+            android:text="Select Pdf"
+            android:layout_width="200dp"
+            android:layout_height="50dp"></TextView>
+
+
+        <LinearLayout
+            android:id="@+id/messagesss"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:text="Message">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button"
+                android:layout_weight="3">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:id="@+id/AddPromoCode_description"
+                    android:textColor="#000"
+                    android:gravity="top"
+                    android:hint="Enter Message .."
+                    android:padding="5dp"
+                    android:textSize="15dp">
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:background="@drawable/backgroundtextviewcolour"
+                android:text="Submit"
+                android:id="@+id/AddPromoCode_submit"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/backgroundtextviewcolour"
+                android:text="Cancel"
+                android:id="@+id/AddPromoCode_Cancel"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

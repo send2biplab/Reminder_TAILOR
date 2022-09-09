@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/llll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Customer Name">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button">
+
+            <EditText
+                android:id="@+id/dashboard_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+
+                android:hint="Enter Customer Name"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:inputType="text"
+
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Mobile Number">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/getPromoCode_MobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Mobile Number"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lldate"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Date">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lldatee"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Date"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:focusable="false"
+                android:inputType="none"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llfollow"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Follow Up Date">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llfolloww"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+            <EditText
+                android:id="@+id/followup_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Follow Up Date"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:focusable="false"
+                android:inputType="none"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llorderdate"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Order Date">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llorderdatee"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/order_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Order Date"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:focusable="false"
+                android:inputType="none"
+
+
+
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lltrail"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Trail Date">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lltraill"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/trailr_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Trail Date"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:focusable="false"
+                android:inputType="none"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lldelivery"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Delivery Date">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lldeliveryy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/delivery_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Delivery Date"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:focusable="false"
+                android:inputType="none"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Salesman Name">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/salesman_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Salesman Name"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Remark">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/remark_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Remark"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Number of People">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+            <EditText
+                android:id="@+id/getPromoCode_Numberofpepole"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:hint="Enter Number Of People"
+                android:textColorHint="#AEAEAE"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Template">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            >
+
+
+            <Spinner
+                android:id="@+id/getPromoCode_PromoCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:paddingRight="8dp"
+                android:textColor="#000"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/backgroundtextviewcolour"
+                android:text="Submit"
+                android:id="@+id/getPromoCode_Sent"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="160dp"
+        android:layout_below="@+id/llll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+
+            android:visibility="gone"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:src="@drawable/visitorlogo">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

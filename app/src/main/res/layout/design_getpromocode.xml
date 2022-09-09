@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SMS"
+        android:background="#C5343B"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:id="@+id/getPromoCode_sms">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Whatsapp"
+        android:background="#C5343B"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="false"
+        android:id="@+id/checkPromoCode_whatsapp">
+
+    </Button>
+
+</LinearLayout>
