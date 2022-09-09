@@ -183,7 +183,7 @@ public class MainNewActivity extends AppCompatActivity {
         {
 
             Intent intent=new Intent(MainNewActivity.this,CallListActivity.class);
-            intent.putExtra("type","TRAIL_DATE");
+            intent.putExtra("type","TRIAL_DATE");
             startActivity(intent);
             finish();
 

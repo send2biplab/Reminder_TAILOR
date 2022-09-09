@@ -52,7 +52,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_DAY = "DAY";
 
     private static final String ORDER_DATE = "ORDER_DATE";
-    private static final String TRAIL_DATE = "TRAIL_DATE";
+    private static final String TRIAL_DATE = "TRIAL_DATE";
     private static final String DELIVERY_DATE = "DELIVERY_DATE";
     private static final String SALESMAN = "SALESMAN";
     private static final String REMARK = "REMARK";
@@ -114,7 +114,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             //  +KEY_RECORD_PROMO_CODE + " TEXT,"
             +KEY_RECORD_NAME + " TEXT,"
             +ORDER_DATE + " TEXT,"
-            +TRAIL_DATE + " TEXT,"
+            +TRIAL_DATE + " TEXT,"
             +DELIVERY_DATE + " TEXT,"
             +FOLLOWUP + " TEXT,"
             +DATE + " TEXT,"
@@ -214,7 +214,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_RECORD_MOBILE_NUMBER, RecordMobileNumber);
         values.put(KEY_RECORD_NAME, name);
         values.put(ORDER_DATE, orderdate);
-        values.put(TRAIL_DATE, traildate);
+        values.put(TRIAL_DATE, traildate);
         values.put(DELIVERY_DATE, deliverydate);
         values.put(SALESMAN, salesman);
         values.put(GUEST_TYPE, guesttype);
@@ -236,7 +236,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_RECORD_MOBILE_NUMBER, RecordMobileNumber);
         values.put(KEY_RECORD_NAME, name);
         values.put(ORDER_DATE, orderdate);
-        values.put(TRAIL_DATE, traildate);
+        values.put(TRIAL_DATE, traildate);
         values.put(DELIVERY_DATE, deliverydate);
         values.put(SALESMAN, salesman);
         values.put(GUEST_TYPE, guesttype);
@@ -634,8 +634,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 String ORDER = cursor_MyDatabaseHelper.getString(
                         cursor_MyDatabaseHelper.getColumnIndex(ORDER_DATE));
 
-                String TRAIL = cursor_MyDatabaseHelper.getString(
-                        cursor_MyDatabaseHelper.getColumnIndex(TRAIL_DATE));
+                String TRIAL = cursor_MyDatabaseHelper.getString(
+                        cursor_MyDatabaseHelper.getColumnIndex(TRIAL_DATE));
 
                 String DELIVERY = cursor_MyDatabaseHelper.getString(
                         cursor_MyDatabaseHelper.getColumnIndex(DELIVERY_DATE));
@@ -663,7 +663,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 map.put("RecordMobileNumber", RecordMobileNumber);
                 map.put("RecordnName", RecordnName);
                 map.put("ORDER", ORDER);
-                map.put("TRAIL", TRAIL);
+                map.put("TRIAL", TRIAL);
                 map.put("DELIVERY", DELIVERY);
                 map.put("SALESMAN", SALESMAN1);
                 map.put("GUEST", GUEST);

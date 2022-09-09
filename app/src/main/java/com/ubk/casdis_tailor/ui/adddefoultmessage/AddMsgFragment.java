@@ -65,7 +65,7 @@ public class AddMsgFragment extends Fragment {
 
 
     String[] courses = { "Select Msg Type", "Delivery Msg",
-            "Trail Msg", "Follow up"};
+            "Trial Msg", "Follow up"};
 
     Spinner spinnertype;
 
@@ -128,7 +128,7 @@ public class AddMsgFragment extends Fragment {
                 }
                 else if (po==2)
                 {
-                    positionSelect="TRAIL_DATE";
+                    positionSelect="TRIAL_DATE";
                     String jsonnn = sharedpreferences.getString(positionSelect, "");
                     Log.e("====3232323===",""+jsonnn);
                     if (jsonnn.equals(""))

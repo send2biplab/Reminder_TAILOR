@@ -204,7 +204,7 @@
                 android:layout_height="50dp"
                 android:paddingRight="8dp"
                 android:textColor="#000"
-                android:maxLength="10"
+
                 android:hint="Enter Follow Up Date"
                 android:textColorHint="#AEAEAE"
                 android:background="@null"
@@ -251,7 +251,7 @@
                 android:layout_height="50dp"
                 android:paddingRight="8dp"
                 android:textColor="#000"
-                android:maxLength="10"
+
                 android:hint="Enter Order Date"
                 android:textColorHint="#AEAEAE"
                 android:background="@null"
@@ -282,7 +282,7 @@
                 android:gravity="center|left"
                 android:textColor="#000"
                 android:textSize="16dp"
-                android:text="Trail Date">
+                android:text="Trial Date">
 
             </TextView>
 
@@ -303,8 +303,8 @@
                 android:layout_height="50dp"
                 android:paddingRight="8dp"
                 android:textColor="#000"
-                android:maxLength="10"
-                android:hint="Enter Trail Date"
+
+                android:hint="Enter Trial Date"
                 android:textColorHint="#AEAEAE"
                 android:background="@null"
                 android:focusable="false"
@@ -352,7 +352,7 @@
                 android:layout_height="50dp"
                 android:paddingRight="8dp"
                 android:textColor="#000"
-                android:maxLength="10"
+
                 android:hint="Enter Delivery Date"
                 android:textColorHint="#AEAEAE"
                 android:background="@null"
@@ -398,7 +398,7 @@
                 android:layout_height="50dp"
                 android:paddingRight="8dp"
                 android:textColor="#000"
-                android:maxLength="10"
+
                 android:hint="Enter Salesman Name"
                 android:textColorHint="#AEAEAE"
                 android:background="@null"
@@ -442,7 +442,7 @@
                 android:layout_height="50dp"
                 android:paddingRight="8dp"
                 android:textColor="#000"
-                android:maxLength="10"
+
                 android:hint="Enter Remark"
                 android:textColorHint="#AEAEAE"
                 android:background="@null"

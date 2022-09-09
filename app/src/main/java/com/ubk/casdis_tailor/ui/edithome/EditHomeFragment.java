@@ -137,7 +137,7 @@ public class EditHomeFragment extends Fragment {
             remark_date.setText(map.get("REMARKk"));
             salesman_date.setText(map.get("SALESMAN"));
             delivery_date.setText(map.get("DELIVERY"));
-            trailr_date.setText(map.get("TRAIL"));
+            trailr_date.setText(map.get("TRIAL"));
             order_date.setText(map.get("ORDER"));
             date.setText(map.get("DATEe"));
             followup_date.setText(map.get("FOLLOW_UP"));

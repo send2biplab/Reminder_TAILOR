@@ -9,13 +9,13 @@
     <fragment
         android:id="@+id/nav_newhome"
         android:name="com.ubk.casdis_tailor.NewHomeFragment"
-        android:label="CASDIS TAILOR"
+        android:label="CASDIS REMINDER"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.ubk.casdis_tailor.ui.home.EditHomeFragment"
-        android:label="CASDIS TAILOR"
+        android:name="com.ubk.casdis_tailor.ui.edithome.EditHomeFragment"
+        android:label="CASDIS REMINDER"
         tools:layout="@layout/fragment_home" />
 
     <fragment

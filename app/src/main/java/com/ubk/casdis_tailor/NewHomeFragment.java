@@ -84,7 +84,7 @@ public class NewHomeFragment extends Fragment {
             public void onClick(View view) {
 
                 Intent intent=new Intent(getContext(),CallListActivity.class);
-                intent.putExtra("type","TRAIL_DATE");
+                intent.putExtra("type","TRIAL_DATE");
                 startActivity(intent);
                 getActivity().finish();
             }

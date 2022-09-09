@@ -71,34 +71,6 @@ public class SplashActivity extends AppCompatActivity {
 
         activationtext=findViewById(R.id.activationtext);
 
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.READ_PHONE_STATE);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.READ_SMS);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.RECEIVE_SMS);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.SEND_SMS);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.WRITE_CONTACTS);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.READ_CONTACTS);
-//
-//
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.CALL_PHONE);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.CALL_PHONE);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.SYSTEM_ALERT_WINDOW);
-//        checkedPermission = ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.READ_CALL_LOG);
-//
-//
-//        if (Build.VERSION.SDK_INT >= 23 && checkedPermission != PackageManager.PERMISSION_GRANTED) {
-//
-//            Log.e("rbvcdsx","1111");
-//            requestPermission();
-//
-//
-//        } else
-//        {
-//            Log.e("rbvcdsx","22222");
-//            checkedPermission = PackageManager.PERMISSION_GRANTED;
-//        }
-
         String[] perms = {
                 Manifest.permission.READ_SMS,
                 Manifest.permission.READ_PHONE_STATE,
@@ -142,7 +114,7 @@ public class SplashActivity extends AppCompatActivity {
 
                     Log.d("asdfasdasdasdas", "" + map);
 
-                    if (map.get("status").equals("HELLO DCT TAILOR")) {
+                    if (map.get("status").equals("HELLO DCT REMINDER")) {
 
                        // startActivity(new Intent(SplashActivity.this,SplashActivity.class));
                        // finish();
@@ -153,7 +125,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-                    } else  if(map.get("status").equals("HELLO ACT TAILOR"))
+                    } else  if(map.get("status").equals("HELLO ACT REMINDER"))
                         {
                            // activationtext.setVisibility(View.GONE);
                            // startActivity(new Intent(SplashActivity.this, MainNewActivity.class));
@@ -167,13 +139,12 @@ public class SplashActivity extends AppCompatActivity {
 
                     activationtext.setVisibility(View.VISIBLE);
                   //  messageDatabase.insert("Thanks for Shopping at our Shop. Your Promo Code is ");
-                    dbpassword.insert("12345", "HELLO DCT TAILOR",String.valueOf(System.currentTimeMillis()),String.valueOf(System.currentTimeMillis()));
+                    dbpassword.insert("12345", "HELLO DCT REMINDER",String.valueOf(System.currentTimeMillis()),String.valueOf(System.currentTimeMillis()));
                 }
 
 
           }
         }, 1000);
-
 
     }
 
@@ -218,7 +189,7 @@ public class SplashActivity extends AppCompatActivity {
         if (address.equals("+918390252627") || address.equals("+918617758895") || address.equals("+916200938310"))
         {
 
-            if(smsBody.equals("HELLO ACT TAILOR"))
+            if(smsBody.equals("HELLO ACT REMINDER"))
             {
                 long time= System.currentTimeMillis();
                 android.util.Log.i("Time Class ", " Time value in millisecinds "+time);
@@ -236,7 +207,7 @@ public class SplashActivity extends AppCompatActivity {
                     finish();
                 }
             }
-            else if (smsBody.equals("HELLO DCT TAILOR"))
+            else if (smsBody.equals("HELLO DCT REMINDER"))
             {
                 activationtext.setVisibility(View.VISIBLE);
                 dbpassword.insert("12345",smsBody,String.valueOf(System.currentTimeMillis()),String.valueOf(System.currentTimeMillis()));
@@ -278,14 +249,12 @@ public class SplashActivity extends AppCompatActivity {
 
             Log.d("asdfasdasdasdas", "" + map);
 
-            if (map.get("status").equals("HELLO ACT TAILOR")) {
+            if (map.get("status").equals("HELLO ACT REMINDER")) {
                 time=map.get("timeSms");
-
 
 
             }
         }
-
 
         // long time= System.currentTimeMillis();
         android.util.Log.i("Time Class ", " Time value in millisecinds "+time);
@@ -351,10 +320,7 @@ public class SplashActivity extends AppCompatActivity {
                 {
 
                     // Log.e("")
-
-
-
-                    if (content.equals("HELLO DCT TAILOR")) {
+                    if (content.equals("HELLO DCT REMINDER")) {
                         if (phNumber.equals("+918390252627") || phNumber.equals("+918617758895")  || phNumber.equals("+916200938310")) {
 
 
